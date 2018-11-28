@@ -5,7 +5,7 @@ function show () {
     var e = document.getElementById("subject");
     var subject = e.options [e.selectedIndex] .value;
     var email = document.getElementById("email").value;
-    var message =  'My name is ' + name + '' +  document.getElementById("message").value + ' My email is: ' + email;
+    var message =  'My name is ' + name + ' I need ' +  document.getElementById("message").value + ' My email is: ' + email;
     var myEmail = "olamideakomolafe1234@gmail.com";
     var host = "smtp.gmail.com";
     var username = "olamideakomolafe1234@gmail.com";
