@@ -16,7 +16,8 @@ function show () {
     });
 
     mySubject = "Hi " + name;
-    myMessage = "Thank you for reaching out, I would get back to you as soon as I can. In the mean time you can connect with me on Twitter: @theAkomolafe";
+    myMessage = "Thank you for reaching out, I would get back to you as soon as I can." 
+    + " In the mean time you can connect with me on Twitter: @theAkomolafe <br>" + "Regards, <br><i>TheAkomolafe Olamide</i>";
     Email.send(myEmail, email, mySubject, myMessage, host, username, password, function done(message){
         console.log(message);
     });
