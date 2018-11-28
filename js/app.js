@@ -1,0 +1,28 @@
+
+
+function show () {
+    var name = document.getElementById("name").value;
+    var e = document.getElementById("subject");
+    var subject = e.options [e.selectedIndex] .value;
+    var email = document.getElementById("email").value;
+    var message =  'My name is ' + name + '' +  document.getElementById("message").value;
+    var myEmail = "olamideakomolafe1234@gmail.com";
+    var host = "smtp.elasticemail.com";
+    var username = "ola@connarts.com.ng";
+    var password = "2ff66c70-a153-4600-bc9a-0d932c21aa76";
+    Email.send (email, myEmail, subject, message ,host, username, password, function done(message){
+                alert("Thank You for reaching out!");
+                console.log(message);
+    });
+
+    mySubject = "Hi " + name  + " Thanks For Reaching Out";
+    myMessage = "Thank you for reaching out, I would get back to you as soon as I can.";
+    Email.send(myEmail, email, mySubject, myMessage, host, username, password);
+    clear();
+}
+
+function clear (){
+    document.getElementById("name").value = '';
+    document.getElementById("email").value = '';
+    document.getElementById("message").value = '';
+}
