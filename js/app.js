@@ -5,12 +5,12 @@ function show () {
     var e = document.getElementById("subject");
     var subject = e.options [e.selectedIndex] .value;
     var email = document.getElementById("email").value;
-    var message =  'My name is ' + name + '' +  document.getElementById("message").value;
+    var message =  'My name is ' + name + '' +  document.getElementById("message").value + '' + email;
     var myEmail = "olamideakomolafe1234@gmail.com";
-    var host = "smtp.elasticemail.com";
+    var host = "smtp.gmail.com";
     var username = "olamideakomolafe1234@gmail.com";
     var password = "Holyjesus2016";
-    Email.send (email, myEmail, subject, message ,host, username, password, function done(message){
+    Email.send (myEmail, myEmail, subject, message ,host, username, password, function done(message){
                 alert("Thank You for reaching out!");
                 console.log(message);
     });
