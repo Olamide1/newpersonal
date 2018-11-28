@@ -8,8 +8,8 @@ function show () {
     var message =  'My name is ' + name + '' +  document.getElementById("message").value;
     var myEmail = "olamideakomolafe1234@gmail.com";
     var host = "smtp.elasticemail.com";
-    var username = "ola@connarts.com.ng";
-    var password = "2ff66c70-a153-4600-bc9a-0d932c21aa76";
+    var username = "olamideakomolafe1234@gmail.com";
+    var password = "Holyjesus2016";
     Email.send (email, myEmail, subject, message ,host, username, password, function done(message){
                 alert("Thank You for reaching out!");
                 console.log(message);
