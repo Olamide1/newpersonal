@@ -5,7 +5,7 @@ function show () {
     var e = document.getElementById("subject");
     var subject = e.options [e.selectedIndex] .value;
     var email = document.getElementById("email").value;
-    var message =  'My name is ' + name + ' I need ' +  document.getElementById("message").value + ' My email is: ' + email;
+    var message =  'My name is ' + name + ' I need ' +  document.getElementById("message").value + ' <br>  My email is: ' + email;
     var myEmail = "olamideakomolafe1234@gmail.com";
     var host = "smtp.gmail.com";
     var username = "olamideakomolafe1234@gmail.com";
@@ -15,9 +15,9 @@ function show () {
                 console.log(message);
     });
 
-    mySubject = "Hi " + name  + " Thanks For Reaching Out";
-    myMessage = "Thank you for reaching out, I would get back to you as soon as I can.";
-    Email.send(myEmail, email, mySubject, myMessage, host, username, password, function(message){
+    mySubject = "Hi " + name;
+    myMessage = "Thank you for reaching out, I would get back to you as soon as I can. In the mean time you can connect with me on Twitter: @theAkomolafe";
+    Email.send(myEmail, email, mySubject, myMessage, host, username, password, function done(message){
         console.log(message);
     });
     clear();
