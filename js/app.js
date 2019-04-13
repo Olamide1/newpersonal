@@ -1,9 +1,5 @@
-// https://www.linkedin.com/in/olamide-akomolafe-801683147/
-
 function show() {
   var name = document.getElementById("name").value;
-  var e = document.getElementById("subject");
-  var subject = e.options[e.selectedIndex].value;
   var email = document.getElementById("email").value;
   var message =
     "My name is " +
@@ -55,7 +51,7 @@ function clear() {
   document.getElementById("email").value = "";
   document.getElementById("message").value = "";
 }
-window.onscroll = function() {
+window.onscroll = function () {
   myFunction();
 };
 
