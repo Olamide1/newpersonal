@@ -2,10 +2,7 @@ function show() {
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
   var message =
-    "My name is " +
-    name +
-    " I need " +
-    document.getElementById("message").value +
+    " I want to join your reading list " +
     ". <br>  My email is: " +
     email;
   var myEmail = "olamideakomolafe1234@gmail.com";
@@ -29,7 +26,7 @@ function show() {
   mySubject = "Hi " + name;
   myMessage =
     "Thank you for reaching out, I would get back to you as soon as I can." +
-    " In the mean time you can connect with me on Twitter: @theAkomolafe <br><br><br>" +
+    " In the mean time you can connect with me on Twitter: <a href='https://twitter.com/theAkomolafe'>@theAkomolafe </a> <br><br><br>" +
     "Regards, <br><i>TheAkomolafe</i> Olamide.";
   Email.send(
     myEmail,
